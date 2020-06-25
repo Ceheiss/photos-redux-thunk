@@ -1,7 +1,14 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-const Details = () => {
-  return <div>I'm a lot of details</div>;
+const Details = ({ title }) => {
+  return <h3 style={{ textAlign: 'center', color: 'white' }}>{title}</h3>;
 };
 
-export default Details;
+const mapStateToProps = (photos, ownProps) => {
+  return {
+    title: photos.find((obj) => obj.id === ownProps.id).title,
+  };
+};
+
+export default connect(mapStateToProps)(Details);

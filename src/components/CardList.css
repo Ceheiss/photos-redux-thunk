@@ -1,0 +1,5 @@
+.CardList {
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(3, 1fr);
+  grid-gap: 40px;
+}

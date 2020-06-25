@@ -1,0 +1,14 @@
+h1 {
+  font-size: 60px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: Arial;
+}
+
+body {
+  background-color: indigo;
+  color: #eee;
+}
